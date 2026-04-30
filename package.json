@@ -1,0 +1,46 @@
+{
+  "name": "@trentino-quest/shared-types",
+  "version": "0.1.0",
+  "description": "DTO TypeScript condivisi tra backend, mobile-app e backoffice di Trentino Quest",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "trentino-quest",
+    "ingegneria-software",
+    "unitn",
+    "dto",
+    "typescript",
+    "shared-types"
+  ],
+  "author": "Gruppo 19 - Valerio Cancemi, Federico Caposano",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TrentinoQuest/trentino-quest-shared-types.git"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.5.0"
+  }
+}

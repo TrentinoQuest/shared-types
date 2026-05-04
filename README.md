@@ -2,9 +2,9 @@
 
 Pacchetto TypeScript contenente i **DTO (Data Transfer Object)** condivisi tra i tre componenti software di Trentino Quest:
 
-- [`trentino-quest-backend`](https://github.com/<your-org>/trentino-quest-backend) — produce/consuma i DTO via REST API
-- [`trentino-quest-mobile`](https://github.com/<your-org>/trentino-quest-mobile) — consuma i DTO per typing delle chiamate HTTP
-- [`trentino-quest-backoffice`](https://github.com/<your-org>/trentino-quest-backoffice) — consuma i DTO per typing delle chiamate HTTP
+- [`trentino-quest-backend`](https://github.com/TrentinoQuest/backend) — produce/consuma i DTO via REST API
+- [`trentino-quest-mobile`](https://github.com/TrentinoQuest/mobile) — consuma i DTO per typing delle chiamate HTTP
+- [`trentino-quest-backoffice`](https://github.com/TrentinoQuest/backoffice) — consuma i DTO per typing delle chiamate HTTP
 
 Progetto del corso di **Ingegneria del Software** (a.a. 2025-2026), Università degli Studi di Trento, Prof. Sandro Fiore.
 **Gruppo 19**: Valerio Cancemi (242804), Federico Caposano (243138).
@@ -20,7 +20,7 @@ Questo pacchetto **non contiene logica runtime**, solo dichiarazioni di tipo Typ
 Il pacchetto è privato e non pubblicato su npm registry pubblico. Si installa direttamente da GitHub:
 
 ```bash
-npm install github:<your-org>/trentino-quest-shared-types
+npm install github:TrentinoQuest/shared-types
 ```
 
 Una volta installato, importi i tipi normalmente:
@@ -38,14 +38,14 @@ npm install
 npm run build
 ```
 
-| Comando | Descrizione |
-|---|---|
-| `npm run build` | Compila TypeScript in `dist/` |
-| `npm run typecheck` | Verifica tipi senza compilare |
-| `npm run lint` | Esegue ESLint |
-| `npm run lint:fix` | ESLint con auto-fix |
-| `npm run format` | Formatta tutto con Prettier |
-| `npm run format:check` | Verifica formattazione |
+| Comando                | Descrizione                   |
+| ---------------------- | ----------------------------- |
+| `npm run build`        | Compila TypeScript in `dist/` |
+| `npm run typecheck`    | Verifica tipi senza compilare |
+| `npm run lint`         | Esegue ESLint                 |
+| `npm run lint:fix`     | ESLint con auto-fix           |
+| `npm run format`       | Formatta tutto con Prettier   |
+| `npm run format:check` | Verifica formattazione        |
 
 ## Struttura
 
@@ -69,7 +69,7 @@ I tipi vengono aggiunti progressivamente man mano che le feature corrispondenti 
 
 ## Repo correlati
 
-- [`trentino-quest-docs`](https://github.com/TrentinoQuest/trentino-quest-docs) — Deliverable D1, D2, ADR
-- [`trentino-quest-backend`](https://github.com/TrentinoQuest/trentino-quest-backend) — Backend Express + MongoDB
-- [`trentino-quest-mobile`](https://github.com/TrentinoQuest/trentino-quest-mobile) — App mobile Ionic/Angular
-- [`trentino-quest-backoffice`](https://github.com/TrentinoQuest/trentino-quest-backoffice) — Pannello amministrativo Angular
+- [`trentino-quest-docs`](https://github.com/TrentinoQuest/docs) — Deliverable D1, D2, ADR
+- [`trentino-quest-backend`](https://github.com/TrentinoQuest/backend) — Backend Express + MongoDB
+- [`trentino-quest-mobile`](https://github.com/TrentinoQuest/mobile) — App mobile Ionic/Angular
+- [`trentino-quest-backoffice`](https://github.com/TrentinoQuest/backoffice) — Pannello amministrativo Angular

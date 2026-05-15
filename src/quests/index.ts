@@ -9,3 +9,4 @@
 export * from './quests';
 export * from './collectibles';
 export * from './dto';
+export * from './admin-dto';

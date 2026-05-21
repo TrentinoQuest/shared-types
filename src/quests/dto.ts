@@ -1,4 +1,4 @@
-import { GeoPoint } from '../common';
+import { GeoPoint, GeoFix } from '../common';
 import { AnyQuest } from './quests';
 import { Collectible } from './collectibles';
 
@@ -11,6 +11,7 @@ import { Collectible } from './collectibles';
  */
 export interface CheckInRequest {
   position: GeoPoint;
+  fix?: Pick<GeoFix, 'accuracy' | 'clientTimestamp'>;
 }
 
 /**
@@ -39,6 +40,7 @@ export interface CheckInResponse {
 export interface ScanQrRequest {
   qrToken: string;
   position: GeoPoint;
+  fix?: Pick<GeoFix, 'accuracy' | 'clientTimestamp'>;
 }
 
 /**

@@ -1,4 +1,5 @@
 import { GeoPoint, Links } from '../common';
+import { PlacementStatus } from './placement-status';
 
 /**
  * Tipi di quest supportati dal sistema.
@@ -51,6 +52,7 @@ export interface PrimaryQuest extends Quest {
   searchArea: GeoPoint;
   searchRadiusMeters: number;
   collectibleId: string | null;
+  placementStatus: PlacementStatus;
 }
 
 /**

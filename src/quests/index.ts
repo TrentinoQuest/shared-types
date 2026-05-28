@@ -10,3 +10,5 @@ export * from './quests';
 export * from './collectibles';
 export * from './dto';
 export * from './admin-dto';
+export * from './placement-status';
+export * from './operator-dto';

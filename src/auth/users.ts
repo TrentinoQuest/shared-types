@@ -46,6 +46,17 @@ export interface Admin extends User {
 }
 
 /**
+ * Estensione di User per il ruolo Manutentore.
+ *
+ * Mappa la classe Manutentore del Deliverable D2 con i suoi attributi
+ * specifici: nome e cognome.
+ */
+export interface Maintenance extends User {
+  firstName: string;
+  lastName: string;
+}
+
+/**
  * Unione discriminata di tutti i tipi di utente del modulo auth.
  *
  * Il campo role agisce da discriminator: TypeScript inferisce automaticamente

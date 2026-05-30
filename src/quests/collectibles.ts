@@ -12,6 +12,17 @@ export enum CollectibleRarity {
 }
 
 /**
+ * Stato del collezionabile, usato per indicare se e' ancora possibile
+ * sbloccarlo o se e' stato rimosso da una quest principale. Un collezionabile
+ * ARCHIVED non puo' piu' essere sbloccato, ma rimane visibile nell'album del
+ * giocatore se era gia' stato sbloccato in passato.
+ */
+export enum CollectibleStatus {
+  ACTIVE = 'active',
+  ARCHIVED = 'archived',
+}
+
+/**
  * Collezionabile sbloccato dal completamento di una quest principale.
  * Viene aggiunto all'album personale del giocatore al momento del
  * completamento e mai successivamente rimosso.
@@ -24,6 +35,7 @@ export interface Collectible {
   rarity: CollectibleRarity;
   createdAt: string;
   _links?: Links;
+  status: CollectibleStatus;
 }
 
 /**

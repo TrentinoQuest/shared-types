@@ -12,3 +12,4 @@ export * from './dto';
 export * from './admin-dto';
 export * from './placement-status';
 export * from './operator-dto';
+export * from './collectible-dto';

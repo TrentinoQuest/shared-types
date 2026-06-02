@@ -64,6 +64,7 @@ export interface ListOperatorQuestsQuery {
 export interface OperatorQuestView extends PrimaryQuest {
   placementStatus: PlacementStatus;
   exactPosition: GeoPoint | null;
+  qrToken: string | null;
 }
 
 /**

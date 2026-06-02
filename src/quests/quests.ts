@@ -53,6 +53,7 @@ export interface PrimaryQuest extends Quest {
   searchRadiusMeters: number;
   collectibleId: string | null;
   placementStatus: PlacementStatus;
+  qrToken?: string | null;
 }
 
 /**

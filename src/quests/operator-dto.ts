@@ -15,6 +15,7 @@ import { PrimaryQuest } from './quests';
  */
 export interface PlaceQuestRequest {
   exactPosition: GeoPoint;
+  scannedToken: string;
   fix?: {
     accuracy: number;
     clientTimestamp: number;

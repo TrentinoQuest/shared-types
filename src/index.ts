@@ -10,3 +10,4 @@ export * from './auth';
 export * from './quests';
 export * from './business';
 export * from './analytics';
+export * from './gamification';

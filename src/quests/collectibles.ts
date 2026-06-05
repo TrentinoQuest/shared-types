@@ -36,6 +36,9 @@ export interface Collectible {
   createdAt: string;
   _links?: Links;
   status: CollectibleStatus;
+  lore: string | null;
+  audioGuideUrl: string | null;
+  coordinates: { lat: number; lng: number } | null;
 }
 
 /**

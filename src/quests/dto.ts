@@ -102,6 +102,7 @@ export interface ProgressSummary {
  */
 export interface GamificationResult {
   xpAwarded: number;
+  coinsAwarded: number;
   streakMultiplier: number;
   currentStreak: number;
   longestStreak: number;

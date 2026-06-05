@@ -38,6 +38,10 @@ export interface Player extends User {
   longestStreak: number;
   streakShieldActive: boolean;
   xpToNextLevel: number | null;
+  coins: number;
+  playerClass: 'castle_hunter' | 'forest_keeper' | 'urban_explorer' | null;
+  onboardingCompleted: boolean;
+  currentLeagueTier: string;
 }
 
 /**

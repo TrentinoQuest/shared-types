@@ -26,6 +26,7 @@ export interface CheckInResponse {
   pointsAwarded: number;
   totalPoints: number;
   distanceFromTargetMeters: number;
+  gamification: GamificationResult;
 }
 
 /**
@@ -55,6 +56,7 @@ export interface ScanQrResponse {
   totalPoints: number;
   collectible: Collectible;
   distanceFromTargetMeters: number;
+  gamification: GamificationResult;
 }
 
 /**
@@ -91,4 +93,22 @@ export interface ProgressSummary {
   totalQuests: number;
   completedQuests: number;
   percentage: number;
+}
+
+/**
+ * Informazioni sul risultato del completamento di una quest, per calcolare
+ * i punti assegnati e aggiornare il profilo del giocatore (streak, livello,
+ * scudi, ecc). Restituito dalle API di check-in e scansione QR.
+ */
+export interface GamificationResult {
+  xpAwarded: number;
+  streakMultiplier: number;
+  currentStreak: number;
+  longestStreak: number;
+  newLevel: number | null;
+  levelTitle: string;
+  totalXp: number;
+  shieldEarned: boolean;
+  shieldConsumed: boolean;
+  streakBroken: boolean;
 }

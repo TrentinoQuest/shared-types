@@ -31,6 +31,13 @@ export interface Player extends User {
   username: string;
   totalPoints: number;
   registrationDate: string;
+  xp: number;
+  level: number;
+  levelTitle: string;
+  currentStreak: number;
+  longestStreak: number;
+  streakShieldActive: boolean;
+  xpToNextLevel: number | null;
 }
 
 /**

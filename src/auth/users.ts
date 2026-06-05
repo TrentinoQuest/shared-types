@@ -64,6 +64,22 @@ export interface Maintenance extends User {
 }
 
 /**
+ * Dati di progressione del giocatore esposti nel profilo.
+ *
+ * Subset dei campi gamification di Player usato dai componenti UI
+ * che mostrano barre di avanzamento, livello e streak.
+ */
+export interface PlayerProgression {
+  xp: number;
+  level: number;
+  levelTitle: string;
+  currentStreak: number;
+  longestStreak: number;
+  streakShieldActive: boolean;
+  xpToNextLevel: number | null;
+}
+
+/**
  * Unione discriminata di tutti i tipi di utente del modulo auth.
  *
  * Il campo role agisce da discriminator: TypeScript inferisce automaticamente

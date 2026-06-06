@@ -39,7 +39,6 @@ export interface Player extends User {
   streakShieldActive: boolean;
   xpToNextLevel: number | null;
   coins: number;
-  playerClass: 'castle_hunter' | 'forest_keeper' | 'urban_explorer' | null;
   onboardingCompleted: boolean;
   currentLeagueTier: string;
 }

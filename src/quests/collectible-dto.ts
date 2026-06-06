@@ -6,7 +6,6 @@ export interface CreateCollectibleRequest {
   imageUrl: string;
   rarity: CollectibleRarity;
   lore?: string | null;
-  audioGuideUrl?: string | null;
   coordinates?: { lat: number; lng: number } | null;
 }
 
@@ -16,6 +15,5 @@ export interface UpdateCollectibleRequest {
   imageUrl?: string;
   rarity?: CollectibleRarity;
   lore?: string | null;
-  audioGuideUrl?: string | null;
   coordinates?: { lat: number; lng: number } | null;
 }

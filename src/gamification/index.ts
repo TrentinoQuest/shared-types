@@ -80,6 +80,7 @@ export interface LeagueMemberView {
   username: string;
   weeklyXp: number;
   isCurrentPlayer: boolean;
+  isFriend: boolean;
 }
 
 export interface LeagueCurrentView {

@@ -1,3 +1,5 @@
+export * from './social';
+
 /**
  * Tipi di dominio comuni condivisi tra tutti i moduli del sistema.
  *

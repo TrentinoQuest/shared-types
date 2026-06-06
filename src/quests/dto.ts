@@ -96,6 +96,22 @@ export interface ProgressSummary {
 }
 
 /**
+ * Zona di prossimità categorica restituita da GET /quests/:id/proximity.
+ * Non rivela mai la distanza in metri né le coordinate esatte.
+ */
+export type ProximityZone =
+  | 'outside_area'
+  | 'cold'
+  | 'warm'
+  | 'hot'
+  | 'burning';
+
+/** Response di GET /quests/:id/proximity */
+export interface ProximityResponse {
+  zone: ProximityZone;
+}
+
+/**
  * Informazioni sul risultato del completamento di una quest, per calcolare
  * i punti assegnati e aggiornare il profilo del giocatore (streak, livello,
  * scudi, ecc). Restituito dalle API di check-in e scansione QR.

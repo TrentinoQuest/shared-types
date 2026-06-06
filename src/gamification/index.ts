@@ -3,12 +3,6 @@
  * kudos, lore quiz, valli, co-op e mercato coupon.
  */
 
-export enum PlayerClass {
-  CASTLE_HUNTER = 'castle_hunter',
-  FOREST_KEEPER = 'forest_keeper',
-  URBAN_EXPLORER = 'urban_explorer',
-}
-
 export enum LeagueTier {
   PORFIDO = 'porfido',
   MARMO = 'marmo',
@@ -159,4 +153,29 @@ export interface CouponView {
   purchasedAt: string;
   expiresAt: string;
   redeemedAt: string | null;
+}
+
+export interface CompleteDailyQuestResponse {
+  xpAwarded: number;
+  coinsAwarded: number;
+  totalXp: number;
+  coins: number;
+}
+
+export interface ValleyProgressResponse {
+  data: ValleyProgressItem[];
+}
+
+export interface CreateCoopChallengeRequest {
+  partnerId: string;
+  type: CoopChallengeType;
+}
+
+export interface AddProgressRequest {
+  value: number;
+}
+
+export interface MapFragment {
+  questName: string;
+  hint: string;
 }

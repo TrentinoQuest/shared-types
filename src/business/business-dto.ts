@@ -70,6 +70,11 @@ export interface OfferWithBusiness extends Offer {
   businessPosition: GeoPoint;
 }
 
+/** Offerta con il numero di coupon ancora disponibili. */
+export interface OfferWithRemaining extends Offer {
+  remaining: number | null;
+}
+
 /**
  * Payload di registrazione di una nuova Attivita Locale (RF28).
  * Crea un account con ruolo business in stato PENDING.

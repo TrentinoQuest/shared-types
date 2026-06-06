@@ -41,6 +41,7 @@ export interface Player extends User {
   coins: number;
   onboardingCompleted: boolean;
   currentLeagueTier: string;
+  oauthProvider: 'google' | 'apple' | null;
 }
 
 /**

@@ -38,7 +38,6 @@ export interface Player extends User {
   longestStreak: number;
   streakShieldActive: boolean;
   xpToNextLevel: number | null;
-  coins: number;
   onboardingCompleted: boolean;
   currentLeagueTier: string;
   oauthProvider: 'google' | 'apple' | null;

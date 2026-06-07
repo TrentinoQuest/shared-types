@@ -159,7 +159,7 @@ export interface CompleteDailyQuestResponse {
   xpAwarded: number;
   coinsAwarded: number;
   totalXp: number;
-  coins: number;
+  totalPoints: number;
 }
 
 export interface ValleyProgressResponse {

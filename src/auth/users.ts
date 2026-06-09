@@ -23,12 +23,15 @@ export interface User {
  * Estensione di User per il ruolo Giocatore.
  *
  * Mappa la classe Giocatore del Deliverable D2 con i suoi attributi
- * specifici: username pubblico, punti totali accumulati, data di
- * registrazione.
+ * specifici: username pubblico, valuta di gioco, data di registrazione.
  */
 export interface Player extends User {
   role: UserRole.PLAYER;
   username: string;
+  /**
+   * Valuta di gioco spendibile nel market (coupon). NON è una misura di
+   * progresso: per quello si usano xp e level. Diminuisce con gli acquisti.
+   */
   totalPoints: number;
   registrationDate: string;
   xp: number;

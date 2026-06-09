@@ -105,7 +105,12 @@ export interface CompletionsHeatmapResponse {
 export interface LeaderboardEntry {
   playerId: string;
   username: string;
+  /** Valuta posseduta (informativa: la classifica NON ordina su questo). */
   totalPoints: number;
+  /** XP totali: criterio di ordinamento della classifica. */
+  xp: number;
+  /** Livello corrente derivato dagli XP. */
+  level: number;
 }
 
 /**
